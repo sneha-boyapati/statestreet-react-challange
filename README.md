@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Clone the project and run the following commands in the root directory of the project.
+
 ## Available Scripts
 
 In the project directory, you can run:
