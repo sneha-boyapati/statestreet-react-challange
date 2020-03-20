@@ -44,13 +44,19 @@ class TransactionsPage extends Component {
         }
     }
 
+    handleNavigation = (event, transaction) => {
+        event.preventDefault();
+        this.props.history.push({
+            pathname: `/transactions/details/${transaction.account}`,
+            state: { transaction }
+        });
+    }
+
     render() {
         return (
-            <div className="transactions-page">
-                <div className="mb-16">
-                    <h1 className="title">My Transactions</h1>
-                    <hr />
-                </div>
+            <div className="transaction-details">
+                <h2 className="title">My Transactions</h2>
+                <hr />
                 <table>
                     <thead>
                         <tr>
@@ -64,7 +70,7 @@ class TransactionsPage extends Component {
                     <tbody>
                         {this.state.transactionsList.map((transaction) => (
                             <tr key={transaction.account}>
-                                <td>{transaction.account}</td>
+                                <td><a href="#" onClick={(event) => this.handleNavigation(event, transaction)}>{transaction.account}</a></td>
                                 <td>{transaction.accountName}</td>
                                 <td>{transaction.currencyCode}</td>
                                 <td>{transaction.amount}</td>
