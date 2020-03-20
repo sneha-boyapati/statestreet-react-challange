@@ -65,3 +65,11 @@ table td, table th {
 table td a {
   text-decoration: none;
 }
+.pagination-buttons {
+  margin: 16px 0;
+}
+
+.pagination-buttons button {
+  padding: 8px;
+  margin: 0 8px;
+}

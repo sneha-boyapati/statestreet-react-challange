@@ -196,9 +196,9 @@ class TransactionsPage extends Component {
                                 ))}
                             </tbody>
                         </table>
-                        <div>
-                            <button onClick={this.handlePrev}>Prev</button>
-                            <button onClick={this.handleNext}>Next</button>
+                        <div className="pagination-buttons">
+                            <button className="prev" onClick={this.handlePrev}>Prev</button>
+                            <button className="next" onClick={this.handleNext}>Next</button>
                         </div>
                     </div>
                 </div>
