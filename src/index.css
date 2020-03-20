@@ -18,7 +18,16 @@ code {
   padding: 16px;
 }
 
+.my-transactions > div {
+  display: flex;
+}
+
 .transaction-details .title{
   font-size: 20px;
   margin: 8px 0;
+}
+
+.account-names, .transaction-types {
+  display: flex;
+  flex-direction: column;
 }
