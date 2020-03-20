@@ -113,9 +113,9 @@ class TransactionsPage extends Component {
                 <hr />
                 <div>
                     <div className="filters">
-                        <h2>Filters</h2>
+                        <h3>Filters</h3>
                         <div>
-                            <h3>Account Name</h3>
+                            <h4>Account Name</h4>
                             <div className="account-names">
                                 <label>
                                     <input type="checkbox" name="accountNames_Savings_Account" value="Savings Account" checked={this.state.filters.accountNames.indexOf('accountNames_Savings_Account') > -1} onChange={this.handleChange} />
@@ -152,7 +152,7 @@ class TransactionsPage extends Component {
                             </div>
                         </div>
                         <div>
-                            <h3>Transaction Type</h3>
+                            <h4>Transaction Type</h4>
                             <div className="transaction-types">
                                 <label>
                                     <input type="checkbox" name="transactionTypes_deposit" value="Deposit" checked={this.state.filters.transactionTypes.indexOf('transactionTypes_deposit') > -1} onChange={this.handleChange} />
